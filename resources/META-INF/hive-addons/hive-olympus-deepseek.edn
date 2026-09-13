@@ -1,0 +1,12 @@
+{:addon/id "hive.olympus.deepseek"
+ :addon/kind :addon
+ :addon/type :native
+ :addon/version "0.1.0-SNAPSHOT"
+ :addon/init-ns "hive-olympus.harness"
+ :addon/init-fn "addon-ctor"
+ :addon/config {:olympus/host "hive.deepseek"}
+ :addon/capabilities #{:olympus-presenter :health-reporting}
+ :addon/dependencies #{"hive.olympus" "hive.deepseek"}
+ :addon/description "Olympus in the DeepSeek Harness: the hive.olympus grid delivered as dsh Hive sidebar panels through hive.deepseek"
+ :addon/maturity :experimental
+ :addon/trust-class :foss}

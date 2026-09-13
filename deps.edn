@@ -1,0 +1,11 @@
+{:paths ["resources"]
+
+ ;; hive-olympus is unpublished: develop with the untracked local.deps.edn
+ ;;   clojure -Sdeps "$(cat local.deps.edn)" -M:test
+ :deps {org.clojure/clojure {:mvn/version "1.12.5"}
+        io.github.hive-agi/hive-olympus {:mvn/version "0.1.0"}}
+
+ :aliases
+ {:test {:extra-paths ["test"]
+         :jvm-opts ["-Xmx1g"]
+         :main-opts ["-m" "hive-olympus-deepseek.test-runner"]}}}
