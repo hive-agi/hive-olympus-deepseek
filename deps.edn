@@ -2,8 +2,8 @@
 
  ;; Sibling checkouts during development go in the untracked local.deps.edn:
  ;;   clojure -Sdeps "$(cat local.deps.edn)" -M:test
- :deps {org.clojure/clojure {:mvn/version "1.12.5"}
-        io.github.hive-agi/hive-olympus {:mvn/version "0.1.2"}}
+ :deps {org.clojure/clojure {:mvn/version "1.12.6"}
+        io.github.hive-agi/hive-olympus {:mvn/version "0.1.4"}}
 
  :aliases
  {:test {:extra-paths ["test"]
